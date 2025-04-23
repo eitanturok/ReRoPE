@@ -7,10 +7,11 @@ from torch import nn
 from diffusers import FluxPipeline, FluxTransformer2DModel, GGUFQuantizationConfig
 from diffusers.models.transformers.transformer_hunyuan_video import HunyuanVideoRotaryPosEmbed
 
+# Faster downloads
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 
 # Determine the device
-device = "cpu" # torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # Path to the GGUF checkpoint (can be a Hugging Face Hub URL or local file)
