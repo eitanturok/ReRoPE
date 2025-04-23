@@ -787,6 +787,7 @@ dependencies = [
     { name = "diffusers" },
     { name = "gguf" },
     { name = "hf-transfer" },
+    { name = "stable-diffusion-cpp-python" },
     { name = "torch" },
     { name = "transformers" },
 ]
@@ -802,6 +803,7 @@ requires-dist = [
     { name = "diffusers", specifier = ">=0.33.1" },
     { name = "gguf", specifier = ">=0.16.2" },
     { name = "hf-transfer", specifier = ">=0.1.9" },
+    { name = "stable-diffusion-cpp-python", specifier = ">=0.2.7" },
     { name = "torch", specifier = ">=2.6.0" },
     { name = "transformers", specifier = ">=4.51.3" },
 ]
@@ -880,6 +882,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload_time = "2024-12-04T17:35:26.475Z" },
 ]
+
+[[package]]
+name = "stable-diffusion-cpp-python"
+version = "0.2.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pillow" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ee/42/ca79478fd71b24be48781faa62d4a564d8b5d659799bb0f08a7b140547a8/stable_diffusion_cpp_python-0.2.7.tar.gz", hash = "sha256:b9a684ad4c710c45b14094653f76222b2ec9194bfb7efc9e17406917cc7fe4d2", size = 76624974, upload_time = "2025-03-15T00:32:36.598Z" }
 
 [[package]]
 name = "sympy"

@@ -5,12 +5,12 @@
             "name": "ReROPE",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/rereop.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
-            "env": {},
-            "python": "${workspaceFolder}/.venv/bin/python",
             "justMyCode": false,
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/rope_new.py",
+            "env": {},
             "args": [],
         }
     ]
